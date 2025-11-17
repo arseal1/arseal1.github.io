@@ -1,0 +1,35 @@
+//ddd
+
+let isShown = true;
+
+document.getElementById("menu").addEventListener("click", hideBar);
+
+
+function hideBar(){
+    
+
+    let sideBarShow = document.getElementsByClassName('navStyle')[0];
+    let siteContent = document.getElementsByClassName('container-content')[0]
+
+
+    if (isShown) {
+        sideBarShow.style.display = "none";
+        siteContent.style.position = "relative";
+        siteContent.style.left = "15vw";
+        siteContent.style.width = "75vw";
+
+        console.log("hidden");
+        isShown = false;
+    }
+
+    else {
+        sideBarShow.style.display = "block";
+        siteContent.style.position = "relative";
+        siteContent.style.left = "25vw";
+        siteContent.style.width = "65vw";
+        console.log("shown");
+        isShown = true;
+    }
+
+
+}
