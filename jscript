@@ -1,35 +1,45 @@
-//ddd
-
-let isShown = true;
+let isShown = false;
 
 document.getElementById("menu").addEventListener("click", hideBar);
+
+document.getElementById("rightAnswer1").addEventListener("click", revealRight);
 
 
 function hideBar(){
     
 
     let sideBarShow = document.getElementsByClassName('navStyle')[0];
-    let siteContent = document.getElementsByClassName('container-content')[0]
+    let siteContent = document.getElementsByClassName('mainstuff')[0];
 
 
     if (isShown) {
         sideBarShow.style.display = "none";
-        siteContent.style.position = "relative";
-        siteContent.style.left = "15vw";
-        siteContent.style.width = "75vw";
 
-        console.log("hidden");
+        siteContent.style.position = "relative";
+        siteContent.style.width = "65vw";
+        siteContent.style.left = "10vw; ";
+        
         isShown = false;
     }
 
     else {
         sideBarShow.style.display = "block";
+
         siteContent.style.position = "relative";
-        siteContent.style.left = "25vw";
-        siteContent.style.width = "65vw";
-        console.log("shown");
+        siteContent.style.left = "18vw; ";
+        siteContent.style.width = "78vw";
         isShown = true;
     }
+
+
+}
+
+function revealRight(){
+    
+
+    let answerStyle = document.getElementById('rightAnswer1');
+    answerStyle.style.background = '#B2FF00';
+    console.log("yeah");
 
 
 }
