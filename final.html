@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,10 +37,15 @@
     <nav class="navStyle">
         
         <ul>
-            <li><a href="https://ame.asu.edu" target="_blank">about</a></li>
+            <li><a href="about.html" target="_blank">about</a></li>
             <li><a href="#Question1">Question 1</a></li>
             <li><a href="#Question2">Question 2</a></li>
             <li><a href="#Question3">Question 3</a></li>
+            <li><a href="#Question4">Question 4</a></li>
+            <li><a href="#Question5">Question 5</a></li>
+            <li><a href="#Question6">Question 6</a></li>
+            <li><a href="#Question7">Question 7</a></li>
+            <li><a href="#Question8">Question 8</a></li>
             
         </ul>
     </nav>
@@ -52,42 +58,120 @@
 
         <section class="allquestions">
             <div class="Question" id="Question1">
-                Example 1
+                (1) What is my major?
             </div>
             <div class="Answers">
-                <div class="wrongAnswer">
-                    N
-                </div>
-                <div class="rightAnswer" id="rightAnswer1">
-                    Y
-                </span></div>
-                <div class="wrongAnswer">
-                    N
-                </div>
-                <div class="wrongAnswer">
-                    N
-                </div>
+                <div id="1" onClick="keepTrack(false, this.id)"> Media Arts and Sciences for Graphic Information Technology </div>
+                <div id="2" onClick="keepTrack(false, this.id)"> Aeronautical Management Technologies </div>
+                <div id="3" onClick="keepTrack(true, this.id)"> Media Arts and Sciences for Game Development </div>
+                <div id="4" onClick="keepTrack(false, this.id)"> Computer Science </div>
             </div>
 
 
             <div class="Question"  id="Question2">
-                Example 2
+                (2) What year am I at ASU?
             </div>
             <div class="Answers">
-                <div class="rightAnswer">
-                    Y
-                </div>
-                <div class="wrongAnswer"> 
-                    N
-                </div>
-                <div class="wrongAnswer">
-                    N
-                </div>
-                <div class="wrongAnswer">
-                    N
-                </div>
+                <div id="5" onClick="keepTrack(true, this.id)">Junior </div>
+                <div id="6" onClick="keepTrack(false, this.id)"> Freshman </div>
+                <div id="7" onClick="keepTrack(false, this.id)"> Senior </div>
+                <div id="8" onClick="keepTrack(false, this.id)"> Grad Student </div>
+            </div>
+
+            <div class="Question"  id="Question3">
+                (3) What city am I from?
+            </div>
+            <div class="Answers">
+                <div id="9" onClick="keepTrack(false, this.id)"> New York </div>
+                <div id="10" onClick="keepTrack(false, this.id)"> Denver </div>
+                <div id="11" onClick="keepTrack(false, this.id)"> Tampa </div>
+                <div id="12" onClick="keepTrack(true, this.id)"> Los Angeles </div>
+            </div>
+
+            <div class="Question"  id="Question4">
+                (4) What's my favorite bird?
+            </div>
+            <div class="Answers">
+                <div id="13" onClick="keepTrack(false, this.id)"> Blue Jay </div>
+                <div id="14" onClick="keepTrack(false, this.id)"> Quail </div>
+                <div id="15" onClick="keepTrack(true, this.id)"> Sandpiper </div>
+                <div id="16" onClick="keepTrack(false, this.id)"> Roadrunner </div>
+            </div>
+
+            <div class="Question"  id="Question5">
+                (5) What's my favorite football team?
+            </div>
+            <div class="Answers">
+                <div id="17" onClick="keepTrack(false, this.id)"> Seattle Seahawks </div>
+                <div id="18" onClick="keepTrack(true, this.id)"> Pittsburgh Steelers </div>
+                <div id="19" onClick="keepTrack(false, this.id)"> Los Angeles Rams </div>
+                <div id="20" onClick="keepTrack(false, this.id)"> Dallas Cowboys </div>
+            </div>
+
+            <div class="Question"  id="Question6">
+                (6) What instrument do I play?
+            </div>
+            <div class="Answers">
+                <div id="21" onClick="keepTrack(true, this.id)"> Percussion </div>
+                <div id="22" onClick="keepTrack(false, this.id)"> Saxophone </div>
+                <div id="23" onClick="keepTrack(false, this.id)"> Oboe </div>
+                <div id="24" onClick="keepTrack(false, this.id)"> Piano </div>
+            </div>
+
+            <div class="Question"  id="Question7">
+                (7) What's my favorite video game of all time?
+            </div>
+            <div class="Answers">
+                <div id="25" onClick="keepTrack(false, this.id)"> Geometry Dash </div>
+                <div id="26" onClick="keepTrack(false, this.id)"> Destiny 2 </div>
+                <div id="27" onClick="keepTrack(false, this.id)"> HellDivers 2 </div>
+                <div id="28" onClick="keepTrack(true, this.id)"> Monster Hunter World </div>
+            </div>
+
+            <div class="Question"  id="Question8">
+                (8) What's my favorite spot to grab food on-campus?
+            </div>
+            <div class="Answers">
+                <div id="29" onClick="keepTrack(false, this.id)"> Subway </div>
+                <div id="30" onClick="keepTrack(false, this.id)"> Chick Fil a </div>
+                <div id="31" onClick="keepTrack(true, this.id)"> Venezia's </div>
+                <div id="32" onClick="keepTrack(false, this.id)"> The Crepe Club </div>
+            </div>
+
+
+            <div class="Question"  id="Smile">
+                :3
             </div>
         </div>
+
+        <script>
+            function keepTrack(isTrue, id){
+                console.log(isTrue);
+
+                let answerSelected = document.getElementById(id);
+
+                if (isTrue){
+                    answerSelected.style.backgroundColor = "#B2FF00";
+                    if (id == 18){
+                        answerSelected.textContent = "Pittsburgh Steelers (FIRE TOMLIN)"
+                    }
+
+                }
+
+                else if(!isTrue){
+                    answerSelected.style.backgroundColor = "#FF0051"; 
+
+
+                }
+
+                else{
+
+
+                }
+
+
+            }
+        </script>
 
 </body>
 

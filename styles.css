@@ -16,7 +16,7 @@
 
  
 
- .mainstuff{
+.mainstuff{
     position: relative; 
     display: relative;
     left: 18vw; 
@@ -45,18 +45,30 @@
    font-size: 3rem;
 }
 
-.wrongAnswer{
+
+.Answers > div{
    background-color: #EEEEEE;
    border-radius: 15px;
    padding: 3vw;
    margin: 1vw;
 }
 
-.rightAnswer{
-   background-color: #EEEEEE;
-   border-radius: 15px;
-   padding: 3vw;
-   margin: 1vw;
+.Answers > div:hover{
+
+      background-color: #CACACA;
+
+}
+
+.correct{
+         
+   background-color: #B2FF00;
+
+}
+
+        
+.incorrect{
+      background-color: #FF0051;
+
 }
 
 nav {
@@ -68,6 +80,7 @@ nav {
     height: 100vh; 
     font-size: 2.3vw; 
     font-weight: 700;
+    background-color: #FF0051;
     text-decoration: none;
 }
 
@@ -101,6 +114,49 @@ nav > ul > li a, a:visited {
     height: 60px; 
     border-radius: 20%;
     display: block;
-    text-align: center;
     z-index: 10; 
+}
+
+#menu > span { 
+    position: relative; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:600px){
+
+.mainstuff{
+    position: relative; 
+    display: relative;
+    left: 0vw; 
+    right: 0vw;
+    top: 0px;
+    padding: 39px; 
+    margin: 0px;
+    width: 85vw; 
+    font-size: 2rem; 
+    background-color: #FFFFFF;
+    text-align: center;
+
+    font-family: "Charis SIL";
+}
+
+nav {
+    font-family: "Changa";
+    position: fixed; 
+    top: 0rem; 
+    left: 0vw; 
+    width: 100vw; 
+    height: 100vh; 
+    font-size: 2rem; 
+    font-weight: 700;
+    text-decoration: none;
+    padding-left: 16vw;
+
+    z-index: 1;
+}
+
+
+
 }
