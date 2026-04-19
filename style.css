@@ -1,0 +1,194 @@
+:root {
+  --blackm: #111218;
+  --hover: #50536e;
+  --whitem: #d4d4ea;
+  --offwhite: #BFBFDB;
+  --greenm: #94ff00;
+  --bluem: #322ac1;
+}
+
+body{
+  background-color: var(--blackm);
+  color: var(--whitem);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*NAV AND FOOTER*/
+/*VVVVVVVVVVVVVV*/
+
+nav{
+  background-color: var(--greenm);
+  text-align: center;
+  padding: 1px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  :hover{
+    color: var(--hover);
+  }
+
+}
+
+nav ul{
+  
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+nav a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  gap: 30px;
+  color: var(--blackm);
+}
+
+footer{
+  background-color: var(--greenm);
+  padding: 1.5em;
+  gap: 30px;
+  
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--blackm);
+
+  :hover{
+    color: var(--hover);
+  }
+}
+
+footer a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  gap: 30px;
+  color: var(--blackm);
+  padding: 1.5em;
+
+  
+}
+
+/*MAIN AND HEADERS*/
+/*VVVVVVVVVVVVVVVV*/
+
+main{
+  margin: 3em;
+}
+
+h1{
+  font-size: 45px;
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/*CONTENT*/
+/*VVVVVVV*/
+
+p{
+  font-size: 18px;
+  color: var(--offwhite);
+}
+
+.mainp{
+  text-align: center;
+
+}
+
+.homesection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section{
+    margin-left: 2em;
+    margin-right: 2em;
+    flex: 1;
+    
+}
+
+
+
+/*MISC STYLING*/
+/*VVVVVVVVVVVV*/
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  border: 5px solid var(--bluem);
+  border-radius: 10px;
+}
+
+.divider{
+  background-color: var(--bluem);
+  padding: 0.6em;
+  margin: 25px;
+  border-radius: 10px;
+}
+
+.logo{
+    display: block;      
+    margin-left: auto;   
+    margin-right: auto;  
+  
+
+    height: 9em;
+    width: auto;
+    margin-top: none;
+    padding: none;
+    border: none;
+}
+
+
+
+
+
+/*Medium Display*/
+/*VVVVVVVVVVVVVV*/
+
+@media screen and (min-width: 600px) and (max-width: 1024px){
+
+  img {
+    display: block;      
+    margin-left: auto;   
+    margin-right: auto;  
+    max-width: 70%;     
+    height: auto;        
+  }
+
+}
+
+
+
+/*Large Display*/
+/*VVVVVVVVVVVVV*/
+
+@media screen and (min-width: 1024px){
+
+  img {
+    display: block;      
+    margin-left: auto;   
+    margin-right: auto;  
+    max-width: 40%;     
+    height: auto;        
+  }
+
+}
