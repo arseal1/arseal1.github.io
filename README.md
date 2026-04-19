@@ -1,1 +1,2 @@
-## Repo for AME220
+## Contains files for CIS300 Final Project
+
