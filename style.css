@@ -1,14 +1,16 @@
 :root {
   --blackm: #111218;
+  --lightblack: #1f212b;
   --hover: #50536e;
   --whitem: #d4d4ea;
   --offwhite: #BFBFDB;
+  --offwhite2: #9696b0;
   --greenm: #94ff00;
   --bluem: #322ac1;
 }
 
 body{
-  background-color: var(--blackm);
+  background-image: linear-gradient(var(--blackm), var(--lightblack));
   color: var(--whitem);
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -112,6 +114,31 @@ p{
 
 }
 
+.linkref a{
+  text-decoration: underline;
+  color: var(--offwhite);
+
+  :hover{
+    color: white;
+
+  }
+
+}
+
+.psub{
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+  color: var(--offwhite2);
+}
+
+.subtext{
+  font-style: italic;
+  font-size: 10px;
+  text-align: center;
+  color: var(--offwhite2);
+}
+
 .homesection{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -122,6 +149,40 @@ section{
     margin-right: 2em;
     flex: 1;
     
+}
+
+/*TABLES*/
+/*VVVVVV*/
+
+table {
+    border: 2px solid var(--bluem);
+    border-collapse: collapse;
+}
+
+tr:hover {
+  background-color: var(--lightblack);
+}
+
+
+td{
+    padding: 0.5em;
+    border: 2px solid var(--bluem);
+    text-align: center;
+}
+
+
+
+th{
+    padding: 0.5em;
+    border: 2px solid var(--bluem);
+    background-color: var(--bluem);
+}
+
+.matchupTable{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
 }
 
 
@@ -157,7 +218,38 @@ img {
     border: none;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
 
+input{
+  background-color: var(--blackm); 
+  border: 2px solid var(--bluem);
+  color: var(--offwhite);
+  border-radius: 3px;
+}
+
+input [type="submit"]{
+  background-color: var(--bluem);
+  color: var(--blackm);
+}
+
+textarea{
+  background-color: var(--blackm); 
+  border: 2px solid var(--bluem);
+  border-radius: 3px;
+  color: var(--offwhite);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+select{
+  background-color: var(--blackm); 
+  border: 2px solid var(--bluem);
+  color: var(--offwhite);
+  border-radius: 3px;
+}
 
 
 
@@ -165,6 +257,12 @@ img {
 /*VVVVVVVVVVVVVV*/
 
 @media screen and (min-width: 600px) and (max-width: 1024px){
+
+  .content{
+    gap: 3em;
+    padding: 5em;
+    padding-top: 1em;
+  }
 
   img {
     display: block;      
@@ -189,6 +287,12 @@ img {
     margin-right: auto;  
     max-width: 40%;     
     height: auto;        
+  }
+
+  .content{
+    gap: 3em;
+    padding: 7em;
+    padding-top: 1em;
   }
 
 }
